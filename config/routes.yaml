@@ -1,0 +1,77 @@
+#game
+game_list:
+    path: /api/game
+    controller: App\Controller\GameController::indexGame
+    methods: [ GET ]
+
+game_get_id:
+    path: /api/game/{id}
+    controller: App\Controller\GameController::getGame
+    methods: [ GET ]
+
+game_create:
+    path: /api/game/create
+    controller: App\Controller\GameController::createGame
+    methods: [ POST ]
+
+game_edit:
+    path: /api/game/edit/{id}
+    controller: App\Controller\GameController::editGame
+    methods: [ POST ]
+
+game_delete:
+    path: /api/game/delete/{id}
+    controller: App\Controller\GameController::deleteGame
+    methods: [ GET ]
+
+#developer
+developer_list:
+    path: /api/developer
+    controller: App\Controller\DeveloperController::indexDeveloper
+    methods: [ GET ]
+
+developer_get_id:
+    path: /api/developer/{id}
+    controller: App\Controller\DeveloperController::getDeveloper
+    methods: [ GET ]
+
+developer_create:
+    path: /api/developer/create
+    controller: App\Controller\DeveloperController::createDeveloper
+    methods: [ POST ]
+
+developer_edit:
+    path: /api/developer/edit/{id}
+    controller: App\Controller\DeveloperController::editDeveloper
+    methods: [ POST ]
+
+developer_delete:
+    path: /api/developer/delete/{id}
+    controller: App\Controller\DeveloperController::deleteDeveloper
+    methods: [ GET ]
+
+#genre
+genre_list:
+    path: /api/genre
+    controller: App\Controller\GenreController::indexGenre
+    methods: [ GET ]
+
+genre_get_id:
+    path: /api/genre/{id}
+    controller: App\Controller\GenreController::getGenre
+    methods: [ GET ]
+
+genre_create:
+    path: /api/genre/create
+    controller: App\Controller\GenreController::createGenre
+    methods: [ POST ]
+
+genre_edit:
+    path: /api/genre/edit/{id}
+    controller: App\Controller\GenreController::editGenre
+    methods: [ POST ]
+
+genre_delete:
+    path: /api/genre/delete/{id}
+    controller: App\Controller\GenreController::deleteGenre
+    methods: [ GET ]
